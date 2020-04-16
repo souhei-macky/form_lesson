@@ -1,1 +1,296 @@
 @charset "utf-8";
+
+.wrapper {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #f2f6f7;
+}
+
+.inner {
+  width: 640px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.main-content {
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  border-radius: 3px;
+  padding: 48px 64px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #545658;
+  font-size: 25px;
+}
+
+.columns {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.column:first-child {
+  margin-right: 8px;
+}
+
+.is-halfwidth {
+  width: 50%;
+}
+
+.button-half {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center; 
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+a.facebook {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+  transition: all .3s;
+}
+
+a.facebook:hover {
+  background-color: #344e87;
+}
+
+a.google {
+  color: #dd4b39;
+  background-color: #fff;
+  transition: all .3s;
+}
+
+a.google:hover {
+  background-color: #f2f6f7;
+}
+
+.is-default-text{
+  font-size: 12px;
+  text-align: center;
+  color: #949697;
+}
+
+.devider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.devider:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.devider-text {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.name-box {
+  display: flex;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.name:first-child {
+  margin-right: 16px;
+}
+
+.form-text {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #545658;
+}
+
+.asterisk {
+  color: #dd4b39;
+  padding-left: 3px;
+}
+
+.input-area {
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  padding: 5px;
+  color: #545658;
+  font-size: 12px;
+}
+
+.input-area:focus {
+  background-color: #fff;
+  border-color: #99CC99;
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+}
+
+.gender-content {
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.gender-content:first-child {
+  margin-left: 0;
+}
+
+.gender-input, .course-choice input {
+  display: none;
+}
+
+.gender-content span {
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+  color: #545658;
+  position: relative;
+}
+
+.gender-content span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender-input:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+.input-init {
+  -webkit-appearance: none;
+  resize: none;
+  outline: none;
+}
+
+.select-area {
+  position: relative;
+}
+
+.select-area:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  transform:rotate(45deg)
+}
+
+.place-input:focus {
+  background-color: #fbfbfb;
+  border-color: #d9d9d9;
+  box-shadow: initial;
+}
+
+.course-choice {
+  margin-bottom: 10px;
+  color: #545658;
+}
+
+.course-choice-text {
+  padding-left: 25px;
+  position: relative;
+}
+
+.course-choice-text:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #d9d9d9;
+}
+
+.course-choice input:checked + .course-choice-text:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  margin-top: -3px;
+  height: 16px;
+  width: 8px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform:rotate(45deg)
+}
+
+.remarks .input-area {
+  height: 100px;
+}
+
+.submit-button {
+  background-color: #01bfbd;
+  color: #fff;
+  padding: 13px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all .3s;
+}
+
+.submit-button:hover {
+  background-color: #01a6a4;
+}
+
+a.link-color {
+  color: #01afa4;
+}
+
+a.link-color:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  padding-top: 30px;
+  text-align: center;
+  background-color: #f2f6f7;
+}
+
+.footer p, .resend-mail {
+  margin-bottom: 8px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.footer a.link-color:hover {
+  text-decoration: underline;
+}
+
