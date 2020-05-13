@@ -177,7 +177,7 @@
   border-radius: 50%;
 }
 
-.gender-input:checked + span::after {
+.gender-input:checked + span:after {
   content: '';
   position: absolute;
   left: 4px;
@@ -273,6 +273,12 @@
 
 .submit-button:hover {
   background-color: #01a6a4;
+}
+
+.submit-button:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border: 1px solid #d9d9d9;
 }
 
 .agreement {
